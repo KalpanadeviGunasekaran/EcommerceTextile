@@ -16,34 +16,34 @@ const router = express.Router();
 
 //routing
 //REGISTER || METHOD POST
-router.post("/register", registerController);
+router.post("https://ecommercetextile-4.onrender.com/register", registerController);
 
 //LOGIN || POST
-router.post("/login", loginController);
+router.post("https://ecommercetextile-4.onrender.com/login", loginController);
 
 //Forgot Password || POST
-router.post("/forgot-password", forgotPasswordController);
+router.post("https://ecommercetextile-4.onrender.com/forgot-password", forgotPasswordController);
 
 //test routes
-router.get("/test", requireSignIn, isAdmin, testController);
+router.get("https://ecommercetextile-4.onrender.com/test", requireSignIn, isAdmin, testController);
 
 //protected User route auth
-router.get("/user-auth", requireSignIn, (req, res) => {
+router.get("https://ecommercetextile-4.onrender.com/user-auth", requireSignIn, (req, res) => {
   res.status(200).send({ ok: true });
 });
 //protected Admin route auth
-router.get("/admin-auth", requireSignIn, isAdmin, (req, res) => {
+router.get("https://ecommercetextile-4.onrender.com/admin-auth", requireSignIn, isAdmin, (req, res) => {
   res.status(200).send({ ok: true });
 });
 
 //update profile
-router.put("/profile", requireSignIn, updateProfileController);
+router.put("https://ecommercetextile-4.onrender.com/profile", requireSignIn, updateProfileController);
 
 //orders
-router.get("/orders", requireSignIn, getOrdersController);
+router.get("https://ecommercetextile-4.onrender.com/orders", requireSignIn, getOrdersController);
 
 //all orders
-router.get("/all-orders", requireSignIn, isAdmin, getAllOrdersController);
+router.get("https://ecommercetextile-4.onrender.com/all-orders", requireSignIn, isAdmin, getAllOrdersController);
 
 // order status update
 router.put(
