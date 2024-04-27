@@ -23,13 +23,13 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 //routes
-app.use("https://ecommercetextile-4.onrender.com/api/v1/auth", authRoutes);
-app.use("https://ecommercetextile-4.onrender.com/api/v1/category", categoryRoutes);
-app.use("https://ecommercetextile-4.onrender.com/api/v1/product", productRoutes);
+app.use("https://ecommercetextile-5.onrender.com/api/v1/auth", authRoutes);
+app.use("https://ecommercetextile-5.onrender.com/api/v1/category", categoryRoutes);
+app.use("https://ecommercetextile-5.onrender.com/api/v1/product", productRoutes);
 
 //rest api
 app.get("/", (req, res) => {
-  res.send("https://ecommercetextile-4.onrender.com");
+  res.send("https://ecommercetextile-5.onrender.com");
 });
 
 //PORT
