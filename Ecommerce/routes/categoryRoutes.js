@@ -13,7 +13,7 @@ const router = express.Router();
 //routes
 // create category
 router.post(
-  "https://ecommercetextile-4.onrender.com/create-category",
+  "https://ecommercetextile-5.onrender.com/create-category",
   requireSignIn,
   isAdmin,
   createCategoryController
@@ -21,21 +21,21 @@ router.post(
 
 //update category
 router.put(
-  "https://ecommercetextile-4.onrender.com/update-category/:id",
+  "https://ecommercetextile-5.onrender.com/update-category/:id",
   requireSignIn,
   isAdmin,
   updateCategoryController
 );
 
 //getALl category
-router.get("https://ecommercetextile-4.onrender.com/get-category", categoryControlller);
+router.get("https://ecommercetextile-5.onrender.com/get-category", categoryControlller);
 
 //single category
-router.get("https://ecommercetextile-4.onrender.com/single-category/:slug", singleCategoryController);
+router.get("https://ecommercetextile-5.onrender.com/single-category/:slug", singleCategoryController);
 
 //delete category
 router.delete(
-  "https://ecommercetextile-4.onrender.com/delete-category/:id",
+  "https://ecommercetextile-5.onrender.com/delete-category/:id",
   requireSignIn,
   isAdmin,
   deleteCategoryCOntroller
