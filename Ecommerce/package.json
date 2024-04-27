@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "build": "react-scripts build",
+    "build": "npm i",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix ./client",
