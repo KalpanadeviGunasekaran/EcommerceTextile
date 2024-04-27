@@ -22,7 +22,7 @@ const router = express.Router();
 
 //routes
 router.post(
-  "https://ecommercetextile-4.onrender.com/create-product",
+  "https://ecommercetextile-5.onrender.com/create-product",
   requireSignIn,
   isAdmin,
   formidable(),
@@ -30,7 +30,7 @@ router.post(
 );
 //routes
 router.put(
-  "https://ecommercetextile-4.onrender.com/update-product/:pid",
+  "https://ecommercetextile-5.onrender.com/update-product/:pid",
   requireSignIn,
   isAdmin,
   formidable(),
@@ -38,40 +38,40 @@ router.put(
 );
 
 //get products
-router.get("https://ecommercetextile-4.onrender.com/get-product", getProductController);
+router.get("https://ecommercetextile-5.onrender.com/get-product", getProductController);
 
 //single product
-router.get("https://ecommercetextile-4.onrender.com/get-product/:slug", getSingleProductController);
+router.get("https://ecommercetextile-5.onrender.com/get-product/:slug", getSingleProductController);
 
 //get photo
-router.get("https://ecommercetextile-4.onrender.com/product-photo/:pid", productPhotoController);
+router.get("https://ecommercetextile-5.onrender.com/product-photo/:pid", productPhotoController);
 
 //delete rproduct
-router.delete("https://ecommercetextile-4.onrender.com/delete-product/:pid", deleteProductController);
+router.delete("https://ecommercetextile-5.onrender.com/delete-product/:pid", deleteProductController);
 
 //filter product
-router.post("https://ecommercetextile-4.onrender.com/product-filters", productFiltersController);
+router.post("https://ecommercetextile-5.onrender.com/product-filters", productFiltersController);
 
 //product count
-router.get("https://ecommercetextile-4.onrender.com/product-count", productCountController);
+router.get("https://ecommercetextile-5.onrender.com/product-count", productCountController);
 
 //product per page
-router.get("https://ecommercetextile-4.onrender.com/product-list/:page", productListController);
+router.get("https://ecommercetextile-5.onrender.com/product-list/:page", productListController);
 
 //search product
-router.get("https://ecommercetextile-4.onrender.com/search/:keyword", searchProductController);
+router.get("https://ecommercetextile-5.onrender.com/search/:keyword", searchProductController);
 
 //similar product
-router.get("https://ecommercetextile-4.onrender.com/related-product/:pid/:cid", realtedProductController);
+router.get("https://ecommercetextile-5.onrender.com/related-product/:pid/:cid", realtedProductController);
 
 //category wise product
-router.get("https://ecommercetextile-4.onrender.com/product-category/:slug", productCategoryController);
+router.get("https://ecommercetextile-5.onrender.com/product-category/:slug", productCategoryController);
 
 //payments routes
 //token
-router.get("https://ecommercetextile-4.onrender.com/braintree/token", braintreeTokenController);
+router.get("https://ecommercetextile-5.onrender.com/braintree/token", braintreeTokenController);
 
 //payments
-router.post("https://ecommercetextile-4.onrender.com/braintree/payment", requireSignIn, brainTreePaymentController);
+router.post("https://ecommercetextile-5.onrender.com/braintree/payment", requireSignIn, brainTreePaymentController);
 
 export default router;
