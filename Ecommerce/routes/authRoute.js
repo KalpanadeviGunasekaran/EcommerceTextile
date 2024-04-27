@@ -47,7 +47,7 @@ router.get("https://ecommercetextile-5.onrender.com/all-orders", requireSignIn, 
 
 // order status update
 router.put(
-  "/order-status/:orderId",
+  "https://ecommercetextile-5.onrender.com/order-status/:orderId",
   requireSignIn,
   isAdmin,
   orderStatusController
