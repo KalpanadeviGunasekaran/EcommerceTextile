@@ -23,9 +23,9 @@ app.use(express.json());
 app.use(morgan("dev"));
 
 //routes
-app.use("https://ecommercetextile-5.onrender.com/v1/auth", authRoutes);
-app.use("https://ecommercetextile-5.onrender.com/v1/category", categoryRoutes);
-app.use("https://ecommercetextile-5.onrender.com/v1/product", productRoutes);
+app.use("https://ecommercetextile-5.onrender.com/app/v1/auth", authRoutes);
+app.use("https://ecommercetextile-5.onrender.com/app/v1/category", categoryRoutes);
+app.use("https://ecommercetextile-5.onrender.com/app/v1/product", productRoutes);
 
 //rest api
 app.get("/", (req, res) => {
